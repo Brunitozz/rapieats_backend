@@ -84,3 +84,5 @@ celerybeat.pid
 
 # Security
 secrets.json
+
+#xd
