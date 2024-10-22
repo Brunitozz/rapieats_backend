@@ -1,0 +1,86 @@
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+*.sqlite3
+*.mo
+
+# Django migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Media files
+/media/
+
+# Static files
+/static/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+*.bak
+*.swp
+
+# PyCharm
+.idea/
+.vscode/
+*.iml
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MySQL database
+*.sql
+*.sql.gz
+
+# Postgres database
+*.pgsql
+
+# Docker
+docker-compose.yml
+Dockerfile
+*.env
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Testing
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Pipenv
+Pipfile.lock
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Security
+secrets.json
