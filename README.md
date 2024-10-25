@@ -18,6 +18,7 @@ Sigue estos pasos para configurar el proyecto en tu máquina local:
    pip install -r requirements.txt
 3. **Crea el archivo .env**
    ```env
+   #Ejemplo de archivo .env (para base de datos compartida)
    SECRET_KEY=tu_clave_secreta
    DB_NAME=nombre_de_tu_base_de_datos
    DB_USER=usuario_especifico
