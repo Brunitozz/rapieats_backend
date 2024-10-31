@@ -93,19 +93,6 @@ DATABASES = {
 SECRET_KEY = env('SECRET_KEY')
 DEBUG = env.bool('DEBUG', default=False)
 
-""" CONFIGURACION PARA MYSQL una vez creada la base de datos
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',  # Cambiar a MySQL
-        'NAME': 'nombre_de_tu_base_de_datos',
-        'USER': 'usuario',
-        'PASSWORD': 'tu_contraseña',
-        'HOST': 'localhost',  # O la IP de tu servidor de base de datos
-        'PORT': '3306',       # Puerto por defecto de MySQL
-    }
-}
-"""
-
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
