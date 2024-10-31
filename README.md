@@ -19,7 +19,7 @@ Sigue estos pasos para configurar el proyecto en tu máquina local:
 3. **Crea el archivo .env**
    ```env
    #Ejemplo de archivo .env (para base de datos compartida)
-   SECRET_KEY=clave secreta de django (se encuentra en settings.py)
+   SECRET_KEY=clave_secreta_de_django_(se_encuentra_en_settings.py)
    DB_NAME=nombre_de_tu_base_de_datos(especialmente en minuscula)
    DB_USER=usuario_especifico
    DB_PASSWORD=contraseña
