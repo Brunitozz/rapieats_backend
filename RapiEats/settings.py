@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'RapiEats.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 env = environ.Env()
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+environ.Env.read_env()
 
 DATABASES = {
     'default': {
@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': env('DB_NAME'),
         'USER': env('DB_USER'),
         'PASSWORD': env('DB_PASSWORD'),
-        'HOST': env('DB_HOST').strip(),
+        'HOST': env('DB_HOST'),
         'PORT': env('DB_PORT'),
     }
 }
