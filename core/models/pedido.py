@@ -1,7 +1,7 @@
 from django.db import models
 from .producto import Producto
 from .dispositivo import DispositivoDeAutoservicio
-from .pago import Pago
+from payments.models import Payment
 
 class Pedido(models.Model):
     id_pedido = models.AutoField(primary_key=True)
@@ -9,7 +9,7 @@ class Pedido(models.Model):
     fecha = models.DateField()
     hora = models.TimeField()
     estado = models.CharField(max_length=100)
-    pago = models.ForeignKey(Pago, on_delete=models.CASCADE)
+    pago = models.ForeignKey(Payment, on_delete=models.CASCADE)
     dispositivo = models.ForeignKey(DispositivoDeAutoservicio, on_delete=models.CASCADE)
 
     def __str__(self):
