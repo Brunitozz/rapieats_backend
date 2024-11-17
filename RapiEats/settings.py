@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'RapiEats',
     'payments',
+    'core',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
