@@ -1,7 +1,10 @@
-from payments.models import Payment
 from rest_framework import serializers
+from payments.models import Pago
 
-class PaymentSerializer(serializers.ModelSerializer):
+class PagoSerializer(serializers.ModelSerializer):
+    estado_display = serializers.CharField(source='get_estado_display', read_only=True)
+
     class Meta:
-        model = Payment
-        fields = '__all__'
+        model = Pago
+        fields = ['id_pago', 'metodo', 'monto', 'estado', 'estado_display']
+        read_only_fields = ['id_pago']
