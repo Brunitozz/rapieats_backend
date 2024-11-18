@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'RapiEats',
     'payments',
+    'core'
 ]
 
 MIDDLEWARE = [
@@ -93,6 +94,7 @@ DATABASES = {
 
 SECRET_KEY = env('SECRET_KEY')
 DEBUG = env.bool('DEBUG', default=False)
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
